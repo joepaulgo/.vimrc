@@ -26,4 +26,4 @@ call plug#begin('~/.vim/plugged')
 call plug#end()
 
 " Nerdtree toggle hotkey
-map<F2> :NERDTreeToggle<CR>     " set toggle key for nerdtree
+map <F2> :NERDTreeToggle<CR>     " set toggle key for nerdtree
