@@ -17,10 +17,13 @@ set smartcase
 " Highlight search
 set hlsearch
 
+" Show matching parenthesis
+set showmatch
+
 " vim-plug call
 call plug#begin('~/.vim/plugged')
     Plug 'scrooloose/nerdtree'
 call plug#end()
 
+" Nerdtree toggle hotkey
 map<F2> :NERDTreeToggle<CR>     " set toggle key for nerdtree
-
