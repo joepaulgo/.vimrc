@@ -42,16 +42,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-fugitive'
     Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
     Plug 'mattn/emmet-vim'
-    Plug 'altercation/vim-colors-solarized'
 call plug#end()
 
 " Nerdtree toggle hotkey
 map <F2> :NERDTreeToggle<CR> 
-
-" vim airline theme
-let g:airline_theme='simple'
-" solarized
-syntax enable
-let g:solarized_termcolors=256
-set background=dark
-colorscheme solarized
