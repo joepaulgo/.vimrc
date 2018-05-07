@@ -18,6 +18,7 @@ set smartindent
 
 " display line numbers
 set number
+highlight LineNr ctermfg=grey ctermbg=white
 
 " Ignore case when searching
 set ignorecase
