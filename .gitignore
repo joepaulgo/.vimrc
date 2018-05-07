@@ -1,2 +1,5 @@
 autoload/
 plugged/
+_swap/
+_undo/
+_backup/

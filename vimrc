@@ -1,3 +1,14 @@
+" swap files (.swp) in a common location
+set dir=~/.vim/_swap//
+
+" backup files (~) in a common location if possible
+set backup
+set backupdir=~/.vim/_backup/,~/tmp,.
+
+" turn on undo files, put them in a common location
+set undofile
+set undodir=~/.vim/_undo/
+
 " tab settings 
 set expandtab
 set tabstop=4
@@ -26,19 +37,21 @@ set noshowmode
 " vim-plug call
 call plug#begin('~/.vim/plugged')
     Plug 'scrooloose/nerdtree'
-    Plug 'itchyny/lightline.vim'
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
+    Plug 'tpope/vim-fugitive'
+    Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
+    Plug 'mattn/emmet-vim'
+    Plug 'altercation/vim-colors-solarized'
 call plug#end()
 
 " Nerdtree toggle hotkey
 map <F2> :NERDTreeToggle<CR> 
 
-" status bar color scheme
-set laststatus=2
-if !has('gui_running')
-    set t_co=256
-endif
-
-" status bar theme
-let g:lightline = {
-    \ 'colorscheme': 'wombat',
-    \ }
+" vim airline theme
+let g:airline_theme='simple'
+" solarized
+syntax enable
+let g:solarized_termcolors=256
+set background=dark
+colorscheme solarized
