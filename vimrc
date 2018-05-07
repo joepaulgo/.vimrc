@@ -46,3 +46,6 @@ call plug#end()
 
 " Nerdtree toggle hotkey
 map <F2> :NERDTreeToggle<CR> 
+
+" vim airline theme
+let g:airline_theme='badwolf'
