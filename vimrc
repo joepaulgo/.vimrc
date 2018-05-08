@@ -18,7 +18,7 @@ set smartindent
 
 " display line numbers
 set number
-highlight LineNr ctermfg=grey ctermbg=white
+highlight LineNr ctermfg=white ctermbg=black
 
 " Ignore case when searching
 set ignorecase
@@ -49,4 +49,4 @@ call plug#end()
 map <F2> :NERDTreeToggle<CR> 
 
 " vim airline theme
-let g:airline_theme='badwolf'
+let g:airline_theme='simple'
