@@ -10,15 +10,17 @@ set undofile
 set undodir=~/.vim/_undo/
 
 " tab settings 
-set expandtab
+set noexpandtab
 set tabstop=4
 set shiftwidth=4
 set autoindent
 set smartindent
+set listchars=tab:\|\ 
+set list
 
 " display line numbers
 set number
-highlight LineNr ctermfg=white ctermbg=black
+highlight LineNr ctermfg=gray ctermbg=white
 
 " Ignore case when searching
 set ignorecase
@@ -37,12 +39,12 @@ set noshowmode
 
 " vim-plug call
 call plug#begin('~/.vim/plugged')
-    Plug 'scrooloose/nerdtree'
-    Plug 'vim-airline/vim-airline'
-    Plug 'vim-airline/vim-airline-themes'
-    Plug 'tpope/vim-fugitive'
-    Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
-    Plug 'mattn/emmet-vim'
+	Plug 'scrooloose/nerdtree'
+	Plug 'vim-airline/vim-airline'
+	Plug 'vim-airline/vim-airline-themes'
+	Plug 'tpope/vim-fugitive'
+	Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
+	Plug 'mattn/emmet-vim'
 call plug#end()
 
 " Nerdtree toggle hotkey
