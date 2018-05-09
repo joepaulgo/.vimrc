@@ -20,7 +20,6 @@ set list
 
 " display line numbers
 set number
-highlight LineNr ctermfg=black
 
 " Ignore case when searching
 set ignorecase
@@ -43,8 +42,10 @@ call plug#begin('~/.vim/plugged')
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
 	Plug 'tpope/vim-fugitive'
+	Plug 'airblade/vim-gitgutter'
 	Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
 	Plug 'mattn/emmet-vim'
+	Plug 'arcticicestudio/nord-vim'
 call plug#end()
 
 " Nerdtree toggle hotkey
@@ -52,3 +53,7 @@ map <F2> :NERDTreeToggle<CR>
 
 " vim airline theme
 let g:airline_theme='simple'
+
+" colorscheme
+let g:nord_uniform_diff_background = 1
+colorscheme nord
