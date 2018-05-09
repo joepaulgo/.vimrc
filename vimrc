@@ -20,7 +20,7 @@ set list
 
 " display line numbers
 set number
-highlight LineNr ctermfg=gray ctermbg=white
+highlight LineNr ctermfg=black
 
 " Ignore case when searching
 set ignorecase
