@@ -1,5 +1,7 @@
-autoload/
 plugged/
-_swap/
-_undo/
-_backup/
+_swap/*
+!_swap/README.MD
+_undo/*
+!_undo/README.MD
+_backup/*
+!_backup/README.MD
