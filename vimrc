@@ -9,7 +9,7 @@ set backupdir=~/.vim/_backup/,~/tmp,.
 set undofile
 set undodir=~/.vim/_undo/
 
-" tab settings 
+" tab settings
 set noexpandtab
 set tabstop=4
 set shiftwidth=4
@@ -63,8 +63,12 @@ map <F2> :NERDTreeToggle<CR>
 " vim airline theme
 let g:airline_theme='simple'
 
-" colorscheme
+" setting up terminal / bash environment
 set termguicolors " enable 24bit true color
+set t_ZH=[3m
+set t_ZR=[23m
+
+" colorscheme
 let g:nord_uniform_diff_background = 1
 let g:nord_italic = 1
 let g:nord_italic_comments = 1
