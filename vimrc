@@ -64,5 +64,9 @@ map <F2> :NERDTreeToggle<CR>
 let g:airline_theme='simple'
 
 " colorscheme
+set termguicolors " enable 24bit true color
 let g:nord_uniform_diff_background = 1
+let g:nord_italic = 1
+let g:nord_italic_comments = 1
+let g:nord_comment_brightness = 12
 colorscheme nord
