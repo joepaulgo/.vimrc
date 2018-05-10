@@ -21,6 +21,11 @@ set list
 " display line numbers
 set number
 
+" text wrapping
+set wrap
+set linebreak
+set nolist
+
 " Ignore case when searching
 set ignorecase
 
