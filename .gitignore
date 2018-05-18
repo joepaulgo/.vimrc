@@ -1,7 +1,13 @@
+# plugin folders
 plugged/
+
+# temp folders
 _swap/*
 !_swap/README.MD
 _undo/*
 !_undo/README.MD
 _backup/*
 !_backup/README.MD
+
+# nerdtree temp files
+.netrwhist
