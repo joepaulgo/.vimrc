@@ -59,6 +59,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
 	Plug 'mattn/emmet-vim'
 	Plug 'arcticicestudio/nord-vim'
+	Plug 'nathanaelkane/vim-indent-guides'
 call plug#end()
 
 " Plugin settings
@@ -85,3 +86,6 @@ let g:ctrlp_cache_cir = $HOME . '/.cache/ctrlp'
 if executable('ag')
 	let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 endif
+
+" indentguides config
+let g:indent_guides_enable_on_vim_startup = 1
