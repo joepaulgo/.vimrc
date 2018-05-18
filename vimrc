@@ -15,8 +15,8 @@ set tabstop=4
 set shiftwidth=4
 set autoindent
 set smartindent
-set listchars=tab:\|\ 
-set list
+" set listchars=tab:\|\ 
+" set list
 
 " display line numbers
 set number
@@ -79,3 +79,9 @@ let g:nord_italic = 1
 let g:nord_italic_comments = 1
 let g:nord_comment_brightness = 12
 colorscheme nord
+
+" speed up ctrlp plugin
+let g:ctrlp_cache_cir = $HOME . '/.cache/ctrlp'
+if executable('ag')
+	let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+endif
