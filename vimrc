@@ -9,6 +9,10 @@ set backupdir=~/.vim/_backup/,~/tmp,.
 set undofile
 set undodir=~/.vim/_undo/
 
+" fixing movement through wrapped text
+:map j gj
+:map k gk
+
 " tab settings
 set noexpandtab
 set tabstop=4
