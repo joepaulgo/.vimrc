@@ -62,7 +62,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'airblade/vim-gitgutter'
 	Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
 	Plug 'mattn/emmet-vim'
-	Plug 'arcticicestudio/nord-vim'
+	Plug 'morhetz/gruvbox'
 call plug#end()
 
 " Plugin settings
@@ -73,16 +73,15 @@ map <F2> :NERDTreeToggle<CR>
 let g:airline_theme='simple'
 
 " setting up terminal / bash environment
-set termguicolors " enable 24bit true color
-set t_ZH=[3m
-set t_ZR=[23m
+" set termguicolors " enable 24bit true color
+" set t_ZH=[3m
+" set t_ZR=[23m
 
 " colorscheme
-let g:nord_uniform_diff_background = 1
-let g:nord_italic = 1
-let g:nord_italic_comments = 1
-let g:nord_comment_brightness = 12
-colorscheme nord
+set background=dark
+let g:gruvbox_contrast_dark = 'hard'
+let g:gruvbox_vert_split = 'bg2'
+colorscheme gruvbox
 
 " speed up ctrlp plugin
 let g:ctrlp_cache_cir = $HOME . '/.cache/ctrlp'
