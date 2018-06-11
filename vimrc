@@ -13,14 +13,15 @@ set undodir=~/.vim/_undo/
 :map j gj
 :map k gk
 
+" change leader to ','
+:let mapleader = ','
+
 " tab settings
 set noexpandtab
 set tabstop=4
 set shiftwidth=4
 set autoindent
 set smartindent
-" set listchars=tab:\|\ 
-" set list
 
 " display line numbers
 set number
@@ -59,8 +60,11 @@ call plug#begin('~/.vim/plugged')
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
 	Plug 'tpope/vim-fugitive'
+	Plug 'tpope/vim-commentary'
 	Plug 'airblade/vim-gitgutter'
-	Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
+	Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+	Plug 'junegunn/fzf.vim'
+	Plug 'junegunn/goyo.vim'
 	Plug 'mattn/emmet-vim'
 	Plug 'morhetz/gruvbox'
 call plug#end()
@@ -72,19 +76,13 @@ map <F2> :NERDTreeToggle<CR>
 " vim airline theme
 let g:airline_theme='simple'
 
-" setting up terminal / bash environment
-" set termguicolors " enable 24bit true color
-" set t_ZH=[3m
-" set t_ZR=[23m
-
 " colorscheme
 set background=dark
 let g:gruvbox_contrast_dark = 'hard'
 let g:gruvbox_vert_split = 'bg2'
 colorscheme gruvbox
 
-" speed up ctrlp plugin
-let g:ctrlp_cache_cir = $HOME . '/.cache/ctrlp'
-if executable('ag')
-	let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-endif
+" fzf mapping
+nmap ; :Buffers<CR>
+nmap <Leader>t :Files<CR>
+nmap <Leader>r :Tags<CR>
