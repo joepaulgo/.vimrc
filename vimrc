@@ -26,6 +26,9 @@ set smartindent
 " display line numbers
 set number
 
+" highlight cursorline
+set cursorline
+
 " text wrapping
 set wrap
 set linebreak
@@ -66,7 +69,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'junegunn/fzf.vim'
 	Plug 'junegunn/goyo.vim'
 	Plug 'mattn/emmet-vim'
-	Plug 'morhetz/gruvbox'
+	Plug 'NLKNguyen/papercolor-theme'
 call plug#end()
 
 " Plugin settings
@@ -74,13 +77,11 @@ call plug#end()
 map <F2> :NERDTreeToggle<CR> 
 
 " vim airline theme
-let g:airline_theme='simple'
+let g:airline_theme='papercolor'
 
 " colorscheme
 set background=dark
-let g:gruvbox_contrast_dark = 'hard'
-let g:gruvbox_vert_split = 'bg2'
-colorscheme gruvbox
+colorscheme PaperColor
 
 " fzf mapping
 nmap ; :Buffers<CR>
