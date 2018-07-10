@@ -11,3 +11,7 @@ _backup/*
 
 # nerdtree temp files
 .netrwhist
+
+# tmux logs
+tmux-client-*.log
+tmux-server-*.log
