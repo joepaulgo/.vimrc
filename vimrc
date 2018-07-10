@@ -60,8 +60,7 @@ map <C-l> <C-W>l
 " vim-plug call
 call plug#begin('~/.vim/plugged')
 	Plug 'scrooloose/nerdtree'
-	Plug 'vim-airline/vim-airline'
-	Plug 'vim-airline/vim-airline-themes'
+	Plug 'itchyny/lightline.vim'
 	Plug 'tpope/vim-fugitive'
 	Plug 'tpope/vim-commentary'
 	Plug 'airblade/vim-gitgutter'
@@ -76,11 +75,14 @@ call plug#end()
 " Nerdtree toggle hotkey
 map <F2> :NERDTreeToggle<CR> 
 
-" vim airline theme
-let g:airline_theme='papercolor'
+" vim lightline theme
+set laststatus=2
+let g:lightline = {
+	\ 'colorscheme': 'PaperColor',
+	\ }
 
 " colorscheme
-set background=dark
+set background=light
 colorscheme PaperColor
 
 " fzf mapping
