@@ -69,6 +69,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'junegunn/goyo.vim'
 	Plug 'mattn/emmet-vim'
 	Plug 'NLKNguyen/papercolor-theme'
+	Plug 'wavded/vim-stylus'
 call plug#end()
 
 " Plugin settings
@@ -79,6 +80,13 @@ map <F2> :NERDTreeToggle<CR>
 set laststatus=2
 let g:lightline = {
 	\ 'colorscheme': 'PaperColor',
+	\ 'active': {
+	\	'left': [ [ 'mode', 'paste' ],
+	\			  [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+	\ },
+	\ 'component_function': {
+	\	'gitbranch': 'fugitive#head',
+	\ },
 	\ }
 
 " colorscheme
