@@ -86,8 +86,12 @@ let g:lightline = {
 	\ },
 	\ 'component_function': {
 	\	'gitbranch': 'fugitive#head',
+	\	'filename': 'LightLineFilename'
 	\ },
 	\ }
+function! LightLineFilename()
+	return expand('%:p:h')
+endfunction
 
 " colorscheme
 set background=light
