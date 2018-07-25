@@ -18,8 +18,8 @@ set undodir=~/.vim/_undo/
 
 " tab settings
 set noexpandtab
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set autoindent
 set smartindent
 
@@ -86,12 +86,8 @@ let g:lightline = {
 	\ },
 	\ 'component_function': {
 	\	'gitbranch': 'fugitive#head',
-	\	'filename': 'LightLineFilename'
 	\ },
 	\ }
-function! LightLineFilename()
-	return expand('%:p:h')
-endfunction
 
 " colorscheme
 set background=light
