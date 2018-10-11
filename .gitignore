@@ -15,3 +15,6 @@ _backup/*
 # tmux logs
 tmux-client-*.log
 tmux-server-*.log
+
+#old files
+autoload/plug.vim.old
